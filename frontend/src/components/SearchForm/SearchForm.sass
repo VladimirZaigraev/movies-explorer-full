@@ -1,0 +1,86 @@
+@import '../../mixins/mixins.sass'
+
+.search-form
+  box-sizing: border-box
+  padding: 77px 0 70px
+  border-bottom: 1px solid #AAAAAA
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__label
+    @include text-13
+
+.search
+  display: block
+  border: 0
+  position: relative
+  margin: 0
+  padding: 0
+  width: 80%
+  &__input
+    display: block
+    box-sizing: border-box
+    border: 1.5px solid #AAAAAA
+    border-radius: 50px
+    padding: 12px 80px 12px 20px
+    background-color: inherit
+    width: calc(100% - 80px)
+    margin-right: 10px
+    margin-bottom: 18px
+    color: #ffffff
+  &__input::placeholder
+    @include text-14
+    color: #8B8B8B
+  &-button
+    position: absolute
+    @include bg-ligth-blue
+    border-radius: 48px
+    border: none
+    width: 80px
+    height: 34px
+    top: 6px
+    right: -14px
+    bottom: 6px
+    background-image: url('../../images/search.svg')
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    transition: all 0.3s linear
+    &:hover
+      opacity: 0.6
+    &:disabled
+      @include bg-ligth-gray
+
+.short-film
+  display: flex
+  align-items: center
+  margin-bottom: 18px
+  &__text
+    @include text-13
+    margin: 0
+    display: inline-block
+    margin-right: 14px
+
+@media (max-width: 1110px)
+  .search-form
+    flex-direction: column
+    width: 100%
+    padding: 57px 0 37px
+  .search
+    width: 100%
+    margin-bottom: 38px
+    &__input
+      width: calc(100% - 100px)
+    &-button
+      right: 5px
+
+@media (max-width: 582px)
+  .search-form
+    padding: 57px 0 26px
+  .search
+    margin-bottom: 45px
+    &__input
+      padding: 11px 80px 12px 18px
+    &__input::placeholder
+      @include text-11
+  .short-film__text
+    @include text-11

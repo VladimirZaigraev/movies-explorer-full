@@ -1,0 +1,26 @@
+@import '../../mixins/mixins.sass'
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+  background-color: inherit
+  backdrop-filter: blur(5px)
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    padding: 18px 0 18px 0
+    max-width: 1140px
+    margin: 0 auto
+
+@media (max-width: 1110px)
+  .header
+    &__wrapper
+      max-width: 92%
+
+@media (max-width: 320px)
+  .header
+    &__wrapper
+      max-width: 94%

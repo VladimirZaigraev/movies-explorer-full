@@ -1,0 +1,81 @@
+@import '../../mixins/mixins.sass'
+
+.section__promo
+  @include bg-blue
+  padding-top: 76px
+.promo
+  display: flex
+  padding: 75px 0 75px 0
+  align-items: flex-start
+  justify-content: space-between
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+  &__title
+    @include title-text-h1
+    margin-bottom: 36px
+    display: inline-block
+    max-width: 700px
+  &__text
+    @include text-13
+    mix-blend-mode: normal
+    opacity: 0.5
+    display: inline-block
+    max-width: 300px
+    margin-bottom: 146px
+  &__btn
+    color: #ffffff
+    background-color: inherit
+    display: inline-block
+    border: 1px solid #ffffff
+    opacity: 0.6
+    box-sizing: border-box
+    padding: 10px 20px 10px 20px
+    border-radius: 3px
+    font-weight: 500
+    font-size: 12px
+    line-height: 16px
+    width: auto
+  &__img
+    object-fit: cover
+    margin-bottom: 48px
+    width: 301px
+    height: 304px
+    transition: 15s
+    overflow: hidden
+  &__img:hover
+    transform: rotate(360deg)
+
+@media (max-width: 1110px)
+  .promo
+    flex-direction: column-reverse
+    align-items: center
+    padding: 141px 0 75px 0
+    &__info
+      align-items: center
+      text-align: center
+    &__text
+      margin-bottom: 92px
+      max-width: 250px
+    &__title
+      font-size: 40px
+      margin-bottom: 22px
+      line-height: 50px
+    &__text
+      margin-bottom: 92px
+
+@media (max-width: 583px)
+  .promo
+    padding: 70px 0 30px 0
+    &__title
+      @include text-30
+      width: 310px
+      margin-bottom: 24px
+    &__img
+      width: 210px
+      height: 206px
+      margin-bottom: 42px
+    &__text
+      margin-bottom: 81px

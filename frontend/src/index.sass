@@ -1,0 +1,125 @@
+@import './vendor/normalize.sass'
+@import './vendor/fonts.sass'
+@import './mixins/mixins.sass'
+
+body
+  @include bg-black
+  margin: 0
+  font-family: Inter, Arial, Helvetica, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace
+.body
+  display: flex
+  flex-direction: column
+  flex: 1 0 auto
+.container
+  max-width: 1140px
+  margin: 0 auto
+  // flex: 1 0 auto
+.section
+  box-sizing: border-box
+
+.list
+  list-style-type: none
+  margin: 0
+  padding: 0
+.item
+  margin-left: 0
+  padding-left: 0
+  box-sizing: border-box
+
+.link
+  text-decoration: none
+  color: #FFFFFF
+  transition: opacity 0.5s linear
+.link:hover
+  opacity: 0.6
+
+.form
+  width: 100%
+  &__fieldset
+    border: none
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin: 0 0 4px 0
+    padding: 0
+    position: relative
+  &__label
+    @include text-10
+    color: #8B8B8B
+    margin-bottom: 6px
+  &__input
+    box-sizing: border-box
+    @include bg-ligth-gray
+    border-radius: 8px
+    width: 100%
+    height: 46px
+    border: none
+    padding: 0
+    color: #ffffff
+    padding: 15px
+    margin-bottom: 17px
+    // &:active
+    //   border: 1px solid #ffffff
+    &-erorr
+      position: absolute
+      bottom: 0
+      @include text-10
+      display: inline-block
+      height: 10px
+      font-weight: 400
+      color: #EE3465
+  &__footer
+    margin: 54px 0 14px 0
+    position: relative
+    padding-top: 20px
+  &__server-message
+    position: absolute
+    top: 0
+    margin: 0
+    padding: 0
+    @include text-10
+  &__button
+    width: 100%
+    height: 45px
+    @include btn
+    @include bg-ligth-blue
+    @include text-14
+    border-radius: 3px
+  &__button:disabled
+    @include bg-gray
+
+.server-message
+  &__error
+    color: #EE3465
+  &__success
+    color: #3DDC84
+
+.redirect
+  @include text-14
+  color: #8B8B8B
+  margin: 0
+  text-align: center
+  &__link
+    color: #4285F4
+@media (max-width: 1140px)
+  .container
+    max-width: 87%
+
+@media (max-width: 586px)
+
+@media (max-width: 320px)
+  .container
+    max-width: 89%
+  .form
+    &__footer
+      margin: 20.6vh 0 14px 0
+    &__button
+      @include text-12
+
+  .redirect
+    @include text-12

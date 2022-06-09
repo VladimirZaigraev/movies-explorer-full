@@ -1,0 +1,106 @@
+@import '../../mixins/mixins.sass'
+
+.about-me
+  padding: 110px 0 100px 0
+  &__title
+    @include title-text-h3
+    padding-bottom: 24px
+    border-bottom: 1px solid #ffffff
+.author
+  display: flex
+  padding-top: 66px
+  justify-content: space-between
+.author
+  &__bio
+    width: 65%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__wrapper
+    display: flex
+    flex-direction: column
+    margin-right: 10px
+  &__name
+    @include title-text-h1
+    margin: 0 0 19px 0
+    display: inline-block
+  &__prossesion
+    @include text-18
+    margin: 0 0 24px 0
+    display: inline-block
+  &__info
+    @include text-14
+    margin: 0
+
+.avatar
+  width: 270px
+  height: 327px
+  &__img
+    display: block
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+    border-radius: 10px
+
+.contacts
+  display: flex
+  &__item
+    margin-right: 20px
+  &__link
+    @include text-14
+    text-decoration: none
+    color: #ffffff
+
+@media (max-width: 768px)
+  .about-me
+    padding: 90px 0 86px 0
+  .author
+    &__bio
+      width: 60%
+    &__name
+      @include text-40
+      margin: 0 0 15px 0
+    &__prossesion
+      @include text-12
+      margin: 0 0 22px 0
+    &__info
+      @include text-12
+
+  .avatar
+    width: 255px
+    height: 307px
+
+@media (max-width: 583px)
+  .about-me
+    padding: 50px 0 67px 0
+    &__title
+      @include text-18
+      padding-bottom: 26px
+  .profile
+    flex-direction: column-reverse
+    align-items: start
+    padding-top: 60px
+
+  .author
+    width: 100%
+    display: flex
+    flex-direction: column-reverse
+    &__bio
+      width: 100%
+    &__name
+      @include text-30
+      text-align: start
+    &__prossesion
+      @include text-11
+      margin-bottom: 20px
+    &__info
+      @include text-11
+      margin-bottom: 40px
+
+  .avatar
+    width: 100%
+    height: 354px
+    margin-bottom: 34px
+    &__img
+      object-position: center top

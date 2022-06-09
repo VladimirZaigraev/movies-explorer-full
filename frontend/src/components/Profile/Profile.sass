@@ -1,0 +1,69 @@
+@import '../../mixins/mixins.sass'
+
+.profile
+  padding-top: 77px
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 410px
+    height: 69vh
+    padding-top: 70px
+  &__title
+    @include text-24
+    text-align: center
+    margin: 0 0 108px 0
+  &__footer
+    display: flex
+    flex-direction: column
+    align-items: center
+    @include text-13
+  &__edit-btn
+    @include btn
+    background-color: inherit
+    margin-bottom: 16px
+  &__logout
+    color: #EE3465
+  &__text
+    @include text-11
+    color: #3DDC84
+.user
+  &__info
+    display: flex
+    justify-content: space-between
+    width: 100%
+    @include text-11
+    padding: 15px 0 15px 0
+    border-bottom: 1px solid #424242
+  &__info:last-child
+    border-bottom: none
+  &__title
+    margin: 0
+  &__data
+    margin: 0
+
+@media (max-width: 768px)
+  .profile
+    &__wrapper
+      height: 43.6vh
+      padding-top: 22.7vh
+    &__title
+      margin: 0 0 79px 0
+
+@media (max-width: 583px)
+  .profile
+    padding-top: 145px
+    &__container
+      max-width: 82%
+    &__wrapper
+      width: 100%
+      padding-top: 0
+      height: 76.7vh
+    &__title
+      margin: 0 0 63px 0
+    &__footer
+      @include text-12
