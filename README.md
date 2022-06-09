@@ -43,6 +43,6 @@ npm run start - запуск frontend
   
 
 <div>
-  <img align="left" width="49%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/movies.jpg">
-  <img align="right" width="49%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/save-movies.jpg">
+  <img align="left" width="45%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/movies.jpg">
+  <img align="right" width="45%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/save-movies.jpg">
 </div>
