@@ -1,10 +1,8 @@
 <h1 align="center">BEUTIFULFILM</h1>
 
-![Screenshot](https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/movies.jpg)
-![Screenshot](https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/save-movies.jpg)
+<h4>Интерактивная страница, для поиска фильмов, с возможностью добаления в избранное и фильтрацией. Реализован функционал регистрации, авторизации, редактирования профиля.</h4>
 
-Интерактивная страница, для поиска фильмов, с возможностью добаления в избранное и фильтрацией. Реализован функционал регистрации, авторизации, редактирования профиля.
-
+<img align="center" width="100%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/home.jpg">
   
 Ссылка на сайт: [https://zaigraev.movie.nomoredomains.work](https://zaigraev.movie.nomoredomains.work)
 
@@ -42,3 +40,9 @@ ESLint(airbnb-base) - стандартизация кода
 npm i - установка модулей
 
 npm run start - запуск frontend
+  
+
+<div>
+  <img align="left" width="50%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/movies.jpg">
+  <img align="right" width="50%" src="https://github.com/VladimirZaigraev/movies-explorer-full/blob/main/screenshot/save-movies.jpg">
+</div>
